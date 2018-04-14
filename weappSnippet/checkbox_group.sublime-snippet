@@ -6,6 +6,6 @@
     </label>
 </checkbox-group>
 ]]></content>
-	<tabTrigger>wcheckboxgroup</tabTrigger>
-	<!-- <scope>text.html</scope> -->
+	<tabTrigger>checkboxgroup</tabTrigger>
+	<scope>text.wxml</scope>
 </snippet>

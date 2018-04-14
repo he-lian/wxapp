@@ -4,6 +4,6 @@
 	${5}
 </form>
 ]]></content>
-	<tabTrigger>wform</tabTrigger>
-	<!-- <scope>text.html</scope> -->
+	<tabTrigger>form</tabTrigger>
+	<scope>text.wxml</scope>
 </snippet>

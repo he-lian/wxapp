@@ -2,6 +2,6 @@
 	<content><![CDATA[
 <input placeholder="${1}" focus="${2:false}" />
 ]]></content>
-	<tabTrigger>winputfocus</tabTrigger>
-	<!-- <scope>text.html</scope> -->
+	<tabTrigger>inputfocus</tabTrigger>
+	<scope>text.wxml</scope>
 </snippet>

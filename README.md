@@ -2,9 +2,18 @@
 weixin app snippet for sublime
 
 
+### 更新：2018-04-14
+	1、配置scope，移除标签书写时的w开头
+
+
+
+
 ### 版权说明
 	此代码初始版本源自：Abbotton https://github.com/Abbotton/weapp-snippet-for-sublime-text-2-3
 	原作者自2016年11月15日后停止更新，而工作中又比较需要，特接手过来进行维护（2018.04.14）
+
+
+
 
 
 
@@ -12,44 +21,44 @@ weixin app snippet for sublime
 
 | 命令 | 对应组件或命令 |
 | -----|----:|
-| wapp | [注册小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html) |
-| wblockif | [block wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html)  |
-| wbutton | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
-| wcheckbox | [checkbox][2] |
-| wcheckboxgroup | [checkbox-group][2] |
-| ~~wactionsheet~~ | [~~action-sheet~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/action-sheet.html) |
-| wcanvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
-| wimage |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
-| wtext | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
-| wv. | [view][4] |
-| wviewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
-| wmap | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
-| ~~wmodal~~ | [~~modal~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/modal.html)|
-| wnavigator |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
-| wexport | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
-| wfor | [for](https://mp.weixin.qq.com/debug/wxadoc/dev/view/wxml/data.html) |
-| wform |[form](https://mp.weixin.qq.com/debug/wxadoc/dev/component/form.html)|
-| wradio|[radio][5]|
-| wradiogroup|[radio-group][5]|
-| wslider|[slider](https://mp.weixin.qq.com/debug/wxadoc/dev/component/slider.html)|
-| wicon|[icon](https://mp.weixin.qq.com/debug/wxadoc/dev/component/icon.html)|
-| winput|[input][3]|
-| wtextarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
-| winfutautofocus|[input][3]|
-| ~~wtoast~~|[~~toast~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/toast.html)|
-| wvideo|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
-| winputfocus|[input][3]|
-| wlabel|[label](https://mp.weixin.qq.com/debug/wxadoc/dev/component/label.html)|
-| ~~wloading~~|[~~loading~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/loading.html)|
-| wpage|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
-| wprogress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
-| wscrollview|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
-| wswitch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
-| wtemplate|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
-| wswiper|[swiper](https://mp.weixin.qq.com/debug/wxadoc/dev/component/swiper.html)|
-| wviewelif|[view][4]|
-| wviewelse|[view][4]|
-| wviewif|[view][4]|
+| app | [注册小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html) |
+| blockif | [block wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html)  |
+| button | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
+| checkbox | [checkbox][2] |
+| checkboxgroup | [checkbox-group][2] |
+| ~~actionsheet~~ | [~~action-sheet~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/action-sheet.html) |
+| canvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
+| image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
+| text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
+| v | [view][4] |
+| viewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
+| map | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
+| ~~modal~~ | [~~modal~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/modal.html)|
+| navigator |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
+| export | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
+| for | [for](https://mp.weixin.qq.com/debug/wxadoc/dev/view/wxml/data.html) |
+| form |[form](https://mp.weixin.qq.com/debug/wxadoc/dev/component/form.html)|
+| radio|[radio][5]|
+| radiogroup|[radio-group][5]|
+| slider|[slider](https://mp.weixin.qq.com/debug/wxadoc/dev/component/slider.html)|
+| icon|[icon](https://mp.weixin.qq.com/debug/wxadoc/dev/component/icon.html)|
+| input|[input][3]|
+| textarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
+| infutautofocus|[input][3]|
+| ~~toast~~|[~~toast~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/toast.html)|
+| video|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
+| inputfocus|[input][3]|
+| label|[label](https://mp.weixin.qq.com/debug/wxadoc/dev/component/label.html)|
+| ~~loading~~|[~~loading~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/loading.html)|
+| page|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
+| progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
+| scrollview|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
+| switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
+| template|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
+| swiper|[swiper](https://mp.weixin.qq.com/debug/wxadoc/dev/component/swiper.html)|
+| viewelif|[view][4]|
+| viewelse|[view][4]|
+| viewif|[view][4]|
 
 
 #### 小程序API snippet

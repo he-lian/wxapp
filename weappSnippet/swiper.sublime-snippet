@@ -6,8 +6,8 @@
 			<image src="{{ ${6} }}" class="slide-image" width="${7}" height="${8}"/>
 		</swiper-item>
 	</block>
-</swiper>		
+</swiper>
 ]]></content>
-	<tabTrigger>wswiper</tabTrigger>
-	<!-- <scope>text.html</scope> -->
+	<tabTrigger>swiper</tabTrigger>
+	<scope>text.wxml</scope>
 </snippet>
