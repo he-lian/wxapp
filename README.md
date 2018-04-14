@@ -15,7 +15,7 @@ weixin app snippet for sublime
 
 
 ### 版权说明
-	此代码初始版本源自：Abbotton https://github.com/Abbotton/weapp-snippet-for-sublime-text-2-3
+	此代码初始版本源自：[Abbotton](https://github.com/Abbotton/weapp-snippet-for-sublime-text-2-3)
 	原作者自2016年11月15日后停止更新，而工作中又比较需要，特接手过来进行维护（2018.04.14）
 
 
@@ -32,7 +32,6 @@ weixin app snippet for sublime
 | button | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
 | checkbox | [checkbox][2] |
 | checkboxgroup | [checkbox-group][2] |
-| ~~actionsheet~~ | [~~action-sheet~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/action-sheet.html) |
 | canvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
@@ -42,7 +41,6 @@ weixin app snippet for sublime
 | # | [view][4] |
 | viewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
 | map | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
-| ~~modal~~ | [~~modal~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/modal.html)|
 | nav |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
 | export | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
 | for | [for](https://mp.weixin.qq.com/debug/wxadoc/dev/view/wxml/data.html) |
@@ -54,11 +52,9 @@ weixin app snippet for sublime
 | input|[input][3]|
 | textarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
 | infutautofocus|[input][3]|
-| ~~toast~~|[~~toast~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/toast.html)|
 | video|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
 | inputfocus|[input][3]|
 | label|[label](https://mp.weixin.qq.com/debug/wxadoc/dev/component/label.html)|
-| ~~loading~~|[~~loading~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/loading.html)|
 | page|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
 | scrollview|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
