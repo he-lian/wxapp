@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<view class="${1}">${2}</view>
+]]></content>
+	<!-- <tabTrigger>wview</tabTrigger> -->
+	<tabTrigger>wv.</tabTrigger>
+	<!-- <scope>text.html</scope> -->
+</snippet>
+
