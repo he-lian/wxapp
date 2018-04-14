@@ -21,7 +21,7 @@ weixin app snippet for sublime
 | wcanvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
 | wimage |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | wtext | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
-| wview | [view][4] |
+| wv. | [view][4] |
 | wviewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
 | wmap | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
 | ~~wmodal~~ | [~~modal~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/modal.html)|
