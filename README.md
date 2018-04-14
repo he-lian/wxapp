@@ -2,8 +2,14 @@
 weixin app snippet for sublime
 
 
+### 待处理问题：
+	1、emmet连写实现
+	2、'.class'、'#id'将class/id名字自动填入
+
+
 ### 更新：2018-04-14
 	1、配置scope，移除标签书写时的w开头
+	2、增加.与#简写方式
 
 
 
@@ -30,11 +36,14 @@ weixin app snippet for sublime
 | canvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
-| v | [view][4] |
+| text. | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
+| view | [view][4] |
+| . | [view][4] |
+| # | [view][4] |
 | viewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
 | map | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
 | ~~modal~~ | [~~modal~~](https://mp.weixin.qq.com/debug/wxadoc/dev/component/modal.html)|
-| navigator |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
+| nav |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
 | export | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
 | for | [for](https://mp.weixin.qq.com/debug/wxadoc/dev/view/wxml/data.html) |
 | form |[form](https://mp.weixin.qq.com/debug/wxadoc/dev/component/form.html)|

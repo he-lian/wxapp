@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-<navigator url="${1}" hover-class="${2}" ${3:redirect}>${4}</navigator>
+<navigator class="${1}" url="${2}">${3}</navigator>
 ]]></content>
-	<tabTrigger>navigator</tabTrigger>
+	<tabTrigger>nav</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>
