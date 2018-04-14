@@ -15,8 +15,8 @@ weixin app snippet for sublime
 
 
 ### 版权说明
-	此代码初始版本源自：[Abbotton](https://github.com/Abbotton/weapp-snippet-for-sublime-text-2-3)
-	原作者自2016年11月15日后停止更新，而工作中又比较需要，特接手过来进行维护（2018.04.14）
+此代码初始版本源自： [Abbotton](https://github.com/Abbotton/weapp-snippet-for-sublime-text-2-3)，
+原作者自2016年11月15日后停止更新，而工作中又比较需要，特接手过来进行维护（2018.04.14）
 
 
 
@@ -28,7 +28,6 @@ weixin app snippet for sublime
 | 命令 | 对应组件或命令 |
 | -----|----:|
 | app | [注册小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html) |
-| blockif | [block wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html)  |
 | button | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
 | checkbox | [checkbox][2] |
 | checkboxgroup | [checkbox-group][2] |
@@ -49,7 +48,9 @@ weixin app snippet for sublime
 | radiogroup|[radio-group][5]|
 | slider|[slider](https://mp.weixin.qq.com/debug/wxadoc/dev/component/slider.html)|
 | icon|[icon](https://mp.weixin.qq.com/debug/wxadoc/dev/component/icon.html)|
+| if | [block wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html)  |
 | input|[input][3]|
+| inputfull|[input][3]|
 | textarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
 | infutautofocus|[input][3]|
 | video|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
@@ -61,9 +62,6 @@ weixin app snippet for sublime
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
 | template|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
 | swiper|[swiper](https://mp.weixin.qq.com/debug/wxadoc/dev/component/swiper.html)|
-| viewelif|[view][4]|
-| viewelse|[view][4]|
-| viewif|[view][4]|
 
 
 #### 小程序API snippet

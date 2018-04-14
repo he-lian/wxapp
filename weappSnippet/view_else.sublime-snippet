@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<view wx:else="{{ ${1} }}">
-	${2}
-</view>
-]]></content>
-	<tabTrigger>viewelse</tabTrigger>
-	<scope>text.wxml</scope>
-</snippet>

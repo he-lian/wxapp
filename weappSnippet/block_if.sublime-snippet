@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<block wx:if="{{ ${1} }}">
-${2}
-</block>
-]]></content>
-	<tabTrigger>blockif</tabTrigger>
-	<scope>text.wxml</scope>
-</snippet>
