@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-<text>${1}</text>
+<text class="${1}">${2}</text>
 ]]></content>
-	<tabTrigger>text</tabTrigger>
+	<tabTrigger>text.</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>

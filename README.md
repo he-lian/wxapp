@@ -29,12 +29,12 @@ weixin app snippet for sublime
 | -----|----:|
 | app | [注册小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html) |
 | button | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
+| buttonFull | [button](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
 | checkbox | [checkbox][2] |
 | checkboxgroup | [checkbox-group][2] |
 | canvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
-| text. | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
 | view | [view][4] |
 | . | [view][4] |
 | # | [view][4] |

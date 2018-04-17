@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<swiper indicator-dots="${1}" autoplay="${2:true}" interval="${3:1500}" duration="${4:500}">
-	<block wx:for-items="${5}">
+<swiper indicator-dots="${1}" autoplay="${2:true}" interval="${3:1500}" duration="${4:500}" class="${5:g-banner}">
+	<block wx:for="${6}">
 		<swiper-item>
-			<image src="{{ ${6} }}" class="slide-image" width="${7}" height="${8}"/>
+			<image src="{{ ${7} }}" class="slide-image" width="${8}" height="${9}"/>
 		</swiper-item>
 	</block>
 </swiper>
