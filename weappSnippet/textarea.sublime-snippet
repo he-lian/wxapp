@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<textarea value="${1}" placeholder="${2}" ${3:placeholder-style=""} ${4:placeholder-class=""} ${5:disabled} ${6:maxlength=""} ${7:auto-focus} ${8:focus} ${9: auto-height} ${10:bindfocus="${11}"} ${12:bindblur="${13}"} ${14:bindlinechange="{$15} "}/>		
+<textarea class="${1}" placeholder="${2:请输入}" bindlinechange="${3}" value="${4}"/>
 ]]></content>
 	<tabTrigger>textarea</tabTrigger>
 	<scope>text.wxml</scope>

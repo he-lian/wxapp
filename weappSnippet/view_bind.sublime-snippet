@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<view bindtap="${1}">
-	${2}
+<view class="${1}" bindtap="${2}">
+	${3}
 </view>
 ]]></content>
-	<tabTrigger>viewbind</tabTrigger>
+	<tabTrigger>vb</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>

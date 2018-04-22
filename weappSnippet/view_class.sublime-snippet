@@ -2,6 +2,6 @@
 	<content><![CDATA[
 <view class="${1}">${2}</view>
 ]]></content>
-	<tabTrigger>.</tabTrigger>
+	<tabTrigger>v</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>

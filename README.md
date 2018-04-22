@@ -36,9 +36,9 @@ weixin app snippet for sublime
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
 | view | [view][4] |
-| . | [view][4] |
+| v | [view][4] |
 | # | [view][4] |
-| viewbind | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
+| vb | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
 | map | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
 | nav |[navigator](https://mp.weixin.qq.com/debug/wxadoc/dev/component/navigator.html)|
 | export | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
@@ -52,11 +52,13 @@ weixin app snippet for sublime
 | input|[input][3]|
 | inputfull|[input][3]|
 | textarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
+| textareaFull|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
 | infutautofocus|[input][3]|
 | video|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
 | inputfocus|[input][3]|
 | label|[label](https://mp.weixin.qq.com/debug/wxadoc/dev/component/label.html)|
 | page|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
+| picker|[picker](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
 | scrollview|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
