@@ -2,6 +2,10 @@
 weixin app snippet for sublime
 
 
+### 使用说明：
+	1、sublime 先安装插件wxapp
+	2、将这个文件包放到Packages目录下即可
+
 ### 待处理问题：
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
