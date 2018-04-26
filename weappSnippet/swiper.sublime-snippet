@@ -1,12 +1,21 @@
 <snippet>
 	<content><![CDATA[
 <swiper indicator-dots="${1}" autoplay="${2:true}" interval="${3:1500}" duration="${4:500}" class="${5:g-banner}">
-	<block wx:for="${6}">
+	<block wx:for="{{${6:banners}}}">
 		<swiper-item>
-			<image src="{{ ${7} }}" class="slide-image" width="${8}" height="${9}"/>
+			<image src="{{ ${7:item} }}" class="slide-image" width="${8}" height="${9}"/>
 		</swiper-item>
 	</block>
 </swiper>
+    banners: [
+      '/images/banner21.jpg',
+      '/images/banner21.jpg',
+      '/images/banner21.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
 ]]></content>
 	<tabTrigger>swiper</tabTrigger>
 	<scope>text.wxml</scope>

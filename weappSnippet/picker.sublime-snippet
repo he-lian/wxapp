@@ -5,6 +5,22 @@
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
 	<view class="picker">当前选择：{{array[index]}}</view>
 </picker>
+data: {
+    array:[
+      '选择门店',
+      '选择门店2',
+      '选择门店3',
+      '选择门店4',
+      '选择门店5'
+    ],
+    index: 0,
+  },
+  bindPickerChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
 <!-- 多列选择器 -->
 <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
 	<view class="picker">当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</view>

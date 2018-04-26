@@ -2,14 +2,21 @@
 weixin app snippet for sublime
 
 
-### 使用说明：
+### 使用说明
 	1、sublime 先安装插件wxapp
 	2、将这个文件包放到Packages目录下即可
 
-### 待处理问题：
+### 待处理问题
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+
+### 更新：2018-04-14
+	1、image增加mode=aspectFill
+	2、input,image默认增加样式
+	3、picker 普通选择器参数项
+	4、swiper 增加常用参数
+	5、scrollview调整为scroll与scrolly 并相应的增加参数
 
 ### 更新：2018-04-14
 	1、配置scope，移除标签书写时的w开头
@@ -24,8 +31,11 @@ weixin app snippet for sublime
 
 
 
-
-
+### 相关资源
+[wxapp](https://github.com/FloydaGithub/wxapp)
+[微信小程序开发资源汇总](https://github.com/justjavac/awesome-wechat-weapp)
+[wxDraw 全面的小程序 Canvas 动画库 支持创建各种图形，动画以及主要手势交互事件](https://github.com/bobiscool/wxDraw)
+[微信小程序图片裁剪工具](https://github.com/we-plugin/we-cropper)
 
 #### WXML snippet
 
@@ -40,6 +50,7 @@ weixin app snippet for sublime
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
 | view | [view][4] |
+| . | [view][4] |
 | v | [view][4] |
 | # | [view][4] |
 | vb | [view 事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html) |
@@ -64,7 +75,8 @@ weixin app snippet for sublime
 | page|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
 | picker|[picker](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
-| scrollview|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
+| scroll|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
+| scrolly|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
 | template|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
 | swiper|[swiper](https://mp.weixin.qq.com/debug/wxadoc/dev/component/swiper.html)|

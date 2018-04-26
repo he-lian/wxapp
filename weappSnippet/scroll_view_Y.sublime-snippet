@@ -4,6 +4,6 @@
 	${6}
 </scroll-view>
 ]]></content>
-	<tabTrigger>scrollview</tabTrigger>
+	<tabTrigger>scrolly</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>

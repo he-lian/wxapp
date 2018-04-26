@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<image src="${1}"></image>
+<image src="${1:/images/}${2}" class="${3:icon}" mode="${4:aspectFill}"></image>
 ]]></content>
 	<tabTrigger>image</tabTrigger>
 	<scope>text.wxml</scope>
