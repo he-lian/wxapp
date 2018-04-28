@@ -11,12 +11,27 @@ weixin app snippet for sublime
 	2、'.class'、'#id'将class/id名字自动填入
 
 
-### 更新：2018-04-14
+### 更新：2018-04-28
+	1、拆分picker
+	2、调整swiper
+
+
+
+### 更新：2018-04-27
+	1、image增加aspectFit默认参数
+		aspectFill:指定图片尺寸，短边完全展示，超出隐藏
+		aspectFit：图片不限定大小时使用，等比缩放
+	2、增加通用组件tab
+
+
+### 更新：2018-04-26
 	1、image增加mode=aspectFill
 	2、input,image默认增加样式
 	3、picker 普通选择器参数项
 	4、swiper 增加常用参数
 	5、scrollview调整为scroll与scrolly 并相应的增加参数
+	6、调整if结构
+	7、picker增加多选参数
 
 ### 更新：2018-04-14
 	1、配置scope，移除标签书写时的w开头
@@ -73,13 +88,26 @@ weixin app snippet for sublime
 | inputfocus|[input][3]|
 | label|[label](https://mp.weixin.qq.com/debug/wxadoc/dev/component/label.html)|
 | page|[Page()](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html)|
-| picker|[picker](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerAll|[picker 全部](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| picker|[picker 普通选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerMul|[picker 多项选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerTime|[picker 时间选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerDate|[picker 日期选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerCity|[picker 城市选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
 | scroll|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | scrolly|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
 | template|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
 | swiper|[swiper](https://mp.weixin.qq.com/debug/wxadoc/dev/component/swiper.html)|
+
+
+
+#### WXML组件 snippet
+
+| 命令 | 对应组件或命令 |
+| -----|----:|
+| tab | [tab切换] |
 
 
 #### 小程序API snippet

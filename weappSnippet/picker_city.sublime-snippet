@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<!-- 省市区选择器 -->
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+</picker>
+data: {
+  region: ['广东省', '广州市', '海珠区'],
+  },
+  bindRegionChange: function (e) {
+  console.log('picker发送选择改变，携带值为', e.detail.value)
+  this.setData({
+    region: e.detail.value
+  })
+  },
+]]></content>
+	<tabTrigger>pickerCity</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

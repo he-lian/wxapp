@@ -1,21 +1,24 @@
 <snippet>
 	<content><![CDATA[
-<swiper indicator-dots="${1}" autoplay="${2:true}" interval="${3:1500}" duration="${4:500}" class="${5:g-banner}">
-	<block wx:for="{{${6:banners}}}">
-		<swiper-item>
-			<image src="{{ ${7:item} }}" class="slide-image" width="${8}" height="${9}"/>
-		</swiper-item>
-	</block>
-</swiper>
-    banners: [
-      '/images/banner21.jpg',
-      '/images/banner21.jpg',
-      '/images/banner21.jpg'
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
+<swiper class="${1:g-banner}" indicator-dots="{{indicatorDots}}" autoplay="true" interval="1500" duration="500" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" style="height:{{bannerHeight}}rpx">
+    <block wx:for="{{banners}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="" height="{{bannerHeight}}rpx"/>
+      </swiper-item>
+    </block>
+  </swiper>
+${2:banners: [
+    '/images/banner11.jpg',
+    '/images/banner11.jpg',
+    '/images/banner11.jpg'
+  ],
+  bannerHeight:540,
+  indicatorDots: true,
+  autoplay: true,
+  interval: 5000,
+  duration: 1000,
+  indicatorColor:'rgba(255,255,255,.3)',
+  indicatorActiveColor:'rgba(255,255,255,.9)',}
 ]]></content>
 	<tabTrigger>swiper</tabTrigger>
 	<scope>text.wxml</scope>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<!-- 日期选择器 -->
+<picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+  生日<view class="picker">当前选择: {{date}}</view>
+</picker>
+data: {
+    date: '2016-09-01',
+  },
+  bindDateChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+]]></content>
+	<tabTrigger>pickerDate</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

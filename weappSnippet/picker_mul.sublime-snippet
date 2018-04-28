@@ -1,0 +1,62 @@
+<snippet>
+	<content><![CDATA[
+<!-- 多列选择器 -->
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+	<view class="picker">当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</view>
+</picker>
+data:{
+  multiArray: [['无脊柱动物', '脊柱动物'], ['扁性动物', '线形动物', '环节动物', '软体动物', '节肢动物'], ['猪肉绦虫', '吸血虫']],
+    objectMultiArray: [
+      [
+        {
+          id: 0,
+          name: '无脊柱动物'
+        },
+        {
+          id: 1,
+          name: '脊柱动物'
+        }
+      ], [
+        {
+          id: 0,
+          name: '扁性动物'
+        },
+        {
+          id: 1,
+          name: '线形动物'
+        },
+        {
+          id: 2,
+          name: '环节动物'
+        },
+        {
+          id: 3,
+          name: '软体动物'
+        },
+        {
+          id: 3,
+          name: '节肢动物'
+        }
+      ], [
+        {
+          id: 0,
+          name: '猪肉绦虫'
+        },
+        {
+          id: 1,
+          name: '吸血虫'
+        }
+      ]
+    ],
+    multiIndex: [0, 0, 0],
+},
+bindMultiPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      multiIndex: e.detail.value
+    })
+  },
+]]></content>
+	<tabTrigger>pickerMul</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -1,0 +1,64 @@
+<snippet>
+	<content><![CDATA[
+<view class="g-tabHeader">
+	<view class="{{tabClass[0]}}" bindtap="btnTabSwitch" id="0">${1:基本信息}</view>
+	<view class="{{tabClass[1]}}" bindtap="btnTabSwitch" id="1">${2:基本信息}</view>
+	<view class="{{tabClass[2]}}" bindtap="btnTabSwitch" id="2">${3:基本信息}</view>
+	<view class="{{tabClass[3]}}" bindtap="btnTabSwitch" id="3">${4:基本信息}</view>
+	<view class="{{tabClass[4]}}" bindtap="btnTabSwitch" id="4">${5:基本信息}</view>
+</view>
+<block wx:if="{{tabContent[0]}}">
+	${6:0000}
+</block>
+<block wx:if="{{tabContent[1]}}">
+	${6:1111}
+</block>
+<block wx:if="{{tabContent[2]}}">
+	${6:222}
+</block>
+<block wx:if="{{tabContent[3]}}">
+	${6:333}
+</block>
+<block wx:if="{{tabContent[4]}}">
+	${6:444}
+</block>
+
+data: {
+	tabClass:["item on","item","item","item","item"],
+	tabContent:[1,0,0,0,0],
+},
+btnTabSwitch:function(e){
+var idx=e.target.id;
+var tempTabClass=this.data.tabClass;
+var tempTabContent=this.data.tabContent;
+for(var i=0;i<(tempTabClass.length-1);i++){
+  if(i==idx){
+    tempTabClass[i]="item on";
+    tempTabContent[i]=1;
+  }else{
+    tempTabClass[i]="item";
+    tempTabContent[i]=0;
+  }
+}
+this.setData({
+  tabClass:tempTabClass,
+  tabContent:tempTabContent,
+})
+},
+
+
+.g-tabHeader{
+	@extend %flex;
+	border-top: #8dc0bc 1px solid;
+	.item{
+		border-left: #fff 1px solid;color:#fff;background-color: #8dc0bc;
+		flex:1;
+		text-align: center;line-height: 60rpx;font-size: 26rpx;
+		&:first-child{border: none;}
+		&.on{background-color: #54a2a9;}
+	}
+}
+]]></content>
+	<tabTrigger>tab</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
