@@ -14,6 +14,7 @@ weixin app snippet for sublime
 ### 更新：2018-04-28
 	1、拆分picker
 	2、调整swiper
+	3、调整wx.getSystemInfo
 
 
 
@@ -114,6 +115,7 @@ weixin app snippet for sublime
 
 | 命令 | 对应组件或命令 |
 | -----|----:|
+| sysInfo| [系统消息][9] | 
 | apirequest| [网络请求](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html) | 
 | apiuploadfile| [上传文件][15] | 
 | apidownloadfile| [下载文件][15] | 
@@ -160,7 +162,6 @@ weixin app snippet for sublime
 | apiopenlocation| [查看位置][8] | 
 | apichooselocation| [打开地图选择位置][8] | 
 | apigetnetworktype| [网络状态][9] | 
-| apigetsysinfo| [系统消息][9] | 
 | apiaccelerometerchange| [重力感应][9] | 
 | apicompasschange| [罗盘][9] | 
 | apisetnavbartitle| [动态设置导航条文字][10] | 
