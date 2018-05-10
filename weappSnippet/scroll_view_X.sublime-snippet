@@ -69,6 +69,6 @@
     })
   },
 ]]></content>
-	<tabTrigger>scroll</tabTrigger>
+	<tabTrigger>scrollx</tabTrigger>
 	<scope>text.wxml</scope>
 </snippet>

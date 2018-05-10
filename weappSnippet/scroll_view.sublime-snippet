@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+    <!-- 常规图片滚动：半露 -->
+<scroll-view scroll-x="true" class="scrollViewX" scroll-with-animation="true">
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+    </scroll-view>
+
+.scrollViewX{
+  height: 235rpx;background-color: #fff;
+  white-space: nowrap;
+  .item{
+    margin-left: 15rpx;
+    width: 430rpx;height: 235rpx;
+    color:#999999;box-sizing:border-box;display: inline-block;
+    &:first-child{margin-left: 0;}
+  }
+}
+]]></content>
+	<tabTrigger>scroll</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -10,6 +10,8 @@ weixin app snippet for sublime
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+### 更新：2018-05-10
+	1、原scroll改为scrollx，新增scroll (常规图片滚动：半露)
 
 ### 更新：2018-04-28
 	1、拆分picker
@@ -96,7 +98,8 @@ weixin app snippet for sublime
 | pickerDate|[picker 日期选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | pickerCity|[picker 城市选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
-| scroll|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
+| scroll|[scroll-view 常规图片滚动：半露](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
+| scrollx|[scroll-view 浮动菜单](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | scrolly|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
 | template|[template](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/template.html)|
