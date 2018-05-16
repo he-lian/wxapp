@@ -10,6 +10,9 @@ weixin app snippet for sublime
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+### 更新：2018-05-16
+	1、调整for循环，增加键值wx:key wx:for-item wx:for-index
+
 ### 更新：2018-05-10
 	1、原scroll改为scrollx，新增scroll (常规图片滚动：半露)
 
