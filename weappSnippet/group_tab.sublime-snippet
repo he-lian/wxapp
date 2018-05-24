@@ -11,16 +11,16 @@
 	${6:0000}
 </block>
 <block wx:if="{{tabContent[1]}}">
-	${6:1111}
+	${7:1111}
 </block>
 <block wx:if="{{tabContent[2]}}">
-	${6:222}
+	${8:222}
 </block>
 <block wx:if="{{tabContent[3]}}">
-	${6:333}
+	${9:333}
 </block>
 <block wx:if="{{tabContent[4]}}">
-	${6:444}
+	${10:444}
 </block>
 
 data: {

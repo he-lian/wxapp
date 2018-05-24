@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+<!-- 聊天对话框：一左一右+时间 -->
+<view class="talk-box">
+	<view class="time"><text>12:44</text></view>
+	<view class="item">
+		<navigator class="face" url=""><image src="/images/face1.png" class="faceImg" mode="aspectFill"></image></navigator>
+		<view class="con conRight">
+			<image src="/images/icon-arrowLeft.png" class="icon-arrow" mode="aspectFill"></image>
+			您好！如有问题需要咨询或沟通，请在下方留言，或可拨打021-64191729与我们联系。
+		</view>
+	</view>
+	<view class="item">
+		<view class="con conLeft">
+			<image src="/images/icon-arrowRight.png" class="icon-arrow" mode="aspectFill"></image>
+			您好！如有问题需要咨询或沟通，请在下方留言，或可拨打021-64191729与我们联系。
+		</view>
+		<navigator class="face" url=""><image src="/images/face2.png" class="faceImg" mode="aspectFill"></image></navigator>
+	</view>
+</view>
+
+
+.talk-box{
+	padding:25rpx 20rpx;
+	.item{display: flex;align-items:center;justify-content:space-between;align-items:flex-start;margin-bottom:40rpx;}
+	.time{text-align:center;margin-bottom:25rpx;
+		text{border-radius:15rpx;color:#fff;padding:0 10rpx;line-height:40rpx;background-color:#cfcfcf;font-size:20rpx;display:inline-block;}
+	}
+	.face{width:80rpx;height:80rpx;overflow:hidden;}
+	.con{width:590rpx;background-color:#fff;border:#dcdcdc 1px solid;border-radius:20rpx;position:relative;padding:25rpx 40rpx;font-size: 28rpx;line-height: 40rpx;}
+	.icon-arrow{width:12rpx;height:25rpx;position:absolute;top:30rpx;}
+	.conRight{margin-right:15rpx;
+		.icon-arrow{left:-12rpx;}
+	}
+	.conLeft{margin-left:15rpx;
+		.icon-arrow{right:-12rpx;}
+	}
+}
+
+]]></content>
+	<tabTrigger>talk</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

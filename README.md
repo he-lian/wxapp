@@ -10,6 +10,16 @@ weixin app snippet for sublime
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+
+
+
+
+
+### 更新：2018-05-23
+	1、textarea 增加样式名
+	2、增加通用组件talk
+
+
 ### 更新：2018-05-16
 	1、调整for循环，增加键值wx:key wx:for-item wx:for-index
 
@@ -115,6 +125,7 @@ weixin app snippet for sublime
 | 命令 | 对应组件或命令 |
 | -----|----:|
 | tab | [tab切换] |
+| talk | [聊天对话框：一左一右+时间] |
 
 
 #### 小程序API snippet
