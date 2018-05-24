@@ -31,7 +31,7 @@ btnTabSwitch:function(e){
 var idx=e.target.id;
 var tempTabClass=this.data.tabClass;
 var tempTabContent=this.data.tabContent;
-for(var i=0;i<(tempTabClass.length-1);i++){
+for(var i=0;i<(tempTabClass.length);i++){
   if(i==idx){
     tempTabClass[i]="item on";
     tempTabContent[i]=1;

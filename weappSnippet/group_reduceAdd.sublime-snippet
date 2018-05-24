@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+<view class="reduceAddBox">
+	<button class="btnReduce" bindtap="btnReduce">-</button>
+	<input placeholder="1" class="input" value="{{resault}}" bindchange=""/>
+	<button class="btnAdd" bindtap="btnAdd">+</button>
+</view>
+
+data: {
+	resault:1,
+},
+btnReduce:function(e){
+	this.setData({resault:(this.data.resault-1>0?this.data.resault-1:0)})
+},
+btnAdd:function(e){
+	this.setData({resault:this.data.resault+1})
+},
+
+
+.reduceAddBox{
+	border-radius: 10rpx;overflow: hidden;
+	border: $bc 1px solid;
+	display: flex;align-items:center;justify-content:center;
+	.btnReduce,.btnAdd{
+		width: 50rpx;line-height: 32rpx;
+	}
+	.input{height: 32rpx;width: 100rpx;text-align: center;padding: 0;
+		border-top: none;border-bottom: none;
+	}
+}
+
+]]></content>
+	<tabTrigger>reduce</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -15,9 +15,12 @@ weixin app snippet for sublime
 
 
 
-### 更新：2018-05-23
+### 更新：2018-05-24
 	1、textarea 增加样式名
 	2、增加通用组件talk
+	3、修复tab js bug
+	4、增加通用组件star
+	5、增加通用组件reduce(数量加减框)
 
 
 ### 更新：2018-05-16
@@ -126,6 +129,13 @@ weixin app snippet for sublime
 | -----|----:|
 | tab | [tab切换] |
 | talk | [聊天对话框：一左一右+时间] |
+| star | [星星评分] |
+| reduce | [数量加减框] |
+
+
+
+
+
 
 
 #### 小程序API snippet

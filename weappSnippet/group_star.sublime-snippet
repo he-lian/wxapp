@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+<!-- 星星评分 -->
+<view class="star">
+	<block wx:for="{{starList}}" wx:key="item">
+		<image src="{{item.src}}" class="icon" mode="aspectFill" bindtap="btnStar" id="{{index}}"></image>
+	</block>
+</view>
+
+
+data: {
+starList:[
+  {src:"/images/star.png"},
+  {src:"/images/star.png"},
+  {src:"/images/star.png"},
+  {src:"/images/star.png"},
+  {src:"/images/star.png"},
+],
+},
+
+btnStar:function(e){
+let idx=e.target.id;
+let tempStarList=this.data.starList;
+console.log(idx)
+tempStarList.forEach(function(item,index){
+  if(index<=idx){
+    item.src="/images/star_on.png";
+  }else{
+    item.src="/images/star.png";
+  }
+})
+this.setData({starList:tempStarList})
+},
+
+
+.star{
+	display: flex;align-items:center;justify-content:flex-start;margin-top: 20rpx;
+	image{width: 40rpx;height: 40rpx;margin-right: 20rpx;cursor: pointer;}
+}
+
+
+]]></content>
+	<tabTrigger>star</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
