@@ -13,6 +13,9 @@ weixin app snippet for sublime
 
 
 
+### 更新：2018-06-01
+	1、input增加密码输入方式
+	2、初步增加 模拟table
 
 
 ### 更新：2018-05-24
@@ -99,9 +102,11 @@ weixin app snippet for sublime
 | icon|[icon](https://mp.weixin.qq.com/debug/wxadoc/dev/component/icon.html)|
 | if | [block wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html)  |
 | input|[input][3]|
+| input:p|[input 密码输入][3]|
 | inputfull|[input][3]|
 | textarea|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
 | textareaFull|[textarea](https://mp.weixin.qq.com/debug/wxadoc/dev/component/textarea.html)|
+| table|[模拟table][3]|
 | infutautofocus|[input][3]|
 | video|[video](https://mp.weixin.qq.com/debug/wxadoc/dev/component/video.html)|
 | inputfocus|[input][3]|

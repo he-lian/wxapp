@@ -1,0 +1,51 @@
+<snippet>
+	<content><![CDATA[
+<view class="g-table">
+	<view class="tr col6 hd">
+		<view class="th">会员姓名</view>
+		<view class="th">会员电话</view>
+		<view class="th">上次体重</view>
+		<view class="th">本次体重</view>
+		<view class="th">预警状态</view>
+		<view class="th">客户状态</view>
+	</view>
+	<view class="tr col6 bd">
+		<view class="td">张金明</view>
+		<view class="td">13818388705</view>
+		<view class="td">85KG</view>
+		<view class="td">85KG</view>
+		<view class="td"><button class="btn" bindtap="">解除预警</button></view>
+		<view class="td"><button class="btn" bindtap="">加入沉睡</button></view>
+	</view>
+	<view class="tr col6 bd">
+		<view class="td">张金明</view>
+		<view class="td">13818388705</view>
+		<view class="td">85KG</view>
+		<view class="td">85KG</view>
+		<view class="td"><button class="btn" bindtap="">解除预警</button></view>
+		<view class="td"><button class="btn" bindtap="">加入沉睡</button></view>
+	</view>
+</view>
+
+
+.g-table{
+	padding: 0 20rpx;
+	.tr{
+		display: flex;align-items:center;justify-content:space-between;
+		height: 60rpx;
+	}
+	.th{font-size: 23rpx;color:red;}
+	.td{font-size: 20rpx;color:#999;}
+
+	.col6{
+		&>view{width: 16.66%;text-align: center;}
+	}
+	.tr{border-bottom: #eee 1px solid;}
+	.btn{width: 100rpx;height: 36rpx;line-height: 36rpx;font-size: 20rpx;padding: 0;text-align: center;border-radius: 10rpx;}
+}
+
+
+]]></content>
+	<tabTrigger>table</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
