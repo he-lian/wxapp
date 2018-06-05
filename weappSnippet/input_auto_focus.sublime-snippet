@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<input placeholder="${1}" auto-focus/>
+<input placeholder="${1}" placeholder-class="phColor" auto-focus />
 ${2}
 ]]></content>
 	<tabTrigger>inputautofocus</tabTrigger>

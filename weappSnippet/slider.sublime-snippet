@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<slider bindchange="${1}" min="${2}" max="${3}" ${5:show-value} step=${6:1} ${7:disabled="${7:false}"} value="${8}"/>
+<slider bindchange="${1}" min="${2}" max="${3}" ${5:show-value} step="${6:1}" ${7:disabled="${7:false}"} value="${8}"/>
 ]]></content>
 	<tabTrigger>slider</tabTrigger>
 	<scope>text.wxml</scope>

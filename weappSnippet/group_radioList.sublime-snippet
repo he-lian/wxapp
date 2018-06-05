@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+<block wx:for="{{radioList}}" wx:key="item" >
+	<view class="item {{item.class}}" id="{{index}}" bindtap="btnRadio">{{item.text}}</view>
+</block>
+
+data: {
+    radioList:[
+      {class:"radio on",text:"举报1"},
+      {class:"radio",text:"举报2"},
+      {class:"radio",text:"举报3"},
+    ],
+  },
+  btnRadio:function(e){
+    const _this=this;
+    let idx=e.target.id;
+    let tempRadioList=_this.data.radioList;
+    tempRadioList.forEach(function(item,index){
+      if(idx==index){
+        item.class="radio on"
+      }else{
+        item.class="radio"
+      }
+    })
+    _this.setData({radioList:tempRadioList})
+  },
+
+
+.radio{background:  url($url+'radio.png') 0 center no-repeat;background-size: 40rpx 40rpx;padding-left: 60rpx;cursor: pointer;
+	&.on{background-image: url($url+'radio-on.png');}
+}
+]]></content>
+	<tabTrigger>radioList</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+<view class="textarea-box">
+	<textarea class="textarea" value="{{textareaValue}}" placeholder="请输入" placeholder-class="phColor" maxlength="500" auto-height bindlinechange="" bindinput="btnInputTextarea"/>
+	<view class="tips">{{textNumber}}/500</view>
+</view>
+
+data: {
+    textareaValue:'',
+    textNumber:0,
+  },
+  btnInputTextarea:function(e){
+    let tempValue=e.detail.value;
+    this.setData({
+      textareaValue:tempValue,
+      textNumber:tempValue.length,
+    })
+  },
+
+
+ .textarea-box{
+	position: relative;
+	.textarea{min-height: 200rpx;display: block;background-color: #fff;width: 100%;padding: 20rpx 30rpx;}
+	.tips{position: absolute;color:#999;font-size: 24rpx;right: 30rpx;bottom: 10rpx;}
+}
+]]></content>
+	<tabTrigger>textareaNumber</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<input placeholder="${1:请输入}" class="${2:input}" value="${3}" bindchange="${4}"/>
+<input placeholder="${1:请输入}" class="${2:input}" value="${3}" bindchange="${4}" placeholder-class="phColor"/>
 ]]></content>
 	<tabTrigger>input</tabTrigger>
 	<scope>text.wxml</scope>

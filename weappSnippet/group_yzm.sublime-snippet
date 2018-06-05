@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+<button class="${1:btn-yzm}" bindtap="btnYzm">{{yzm}}</button>
+data: {
+    yzm: '发送验证码',
+    yzmSending: false,
+  },
+  btnYzm: function(e) {
+    const _this = this;
+    let i = 59;
+    let int;
+
+    if (!_this.data.yzmSending){
+      _this.setData({
+        yzmSending: true
+      })
+      function clock() {
+        _this.setData({yzm: "重新发送(" + i + ")"})
+        i--;
+        if (i < 0) {
+          _this.setData({yzmSending: false})
+          i = 59;
+          _this.setData({yzm: "发送验证码"})
+          clearInterval(int);
+        }
+      }
+      int = setInterval(clock, 1000);
+      return false;
+    }
+  },
+]]></content>
+	<tabTrigger>yzm</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

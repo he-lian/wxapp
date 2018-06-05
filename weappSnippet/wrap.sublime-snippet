@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<view class="wrap ${1:page}">
+	${2:footerClass:'ft1',    // 底部菜单当前项  ft1/ft2/ft3/ft4/ft5}
+
+
+	<import src="/template/footer"/>
+	<template is="footer" data="{{footerClass:footerClass}}"/>
+</view>
+]]></content>
+	<tabTrigger>wrap</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

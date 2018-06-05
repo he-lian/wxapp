@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<input placeholder="${1}" focus="${2:false}" />
+<input placeholder="${1}" focus="${2:false}" placeholder-class="phColor" />
 ]]></content>
 	<tabTrigger>inputfocus</tabTrigger>
 	<scope>text.wxml</scope>
