@@ -13,7 +13,7 @@
 		.item{
 			margin-left: 50rpx;
 			color:#999999;box-sizing:border-box;display: inline-block;height: 80rpx;line-height: 80rpx;
-			&.on{color:$tc;border-bottom: $black 3px solid;}
+			&.on{color:#333;border-bottom: #333 3px solid;}
 			&:first-child{margin-left: 0;}
 		}
 	}

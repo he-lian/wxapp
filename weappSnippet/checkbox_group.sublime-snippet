@@ -1,10 +1,24 @@
 <snippet>
 	<content><![CDATA[
-<checkbox-group ${1:bindchange="${2}"}>
-    <label class="checkbox">
-        <checkbox value="${3}" checked="${4:checked}"/>${5}
-    </label>
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{checkboxList}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
 </checkbox-group>
+
+data: {
+    checkboxList: [
+      {name: 'USA', value: '美国'},
+      {name: 'CHN', value: '中国', checked: 'true'},
+      {name: 'BRA', value: '巴西'},
+      {name: 'JPN', value: '日本'},
+      {name: 'ENG', value: '英国'},
+      {name: 'TUR', value: '法国'},
+    ],
+  },
+  checkboxChange: function(e) {
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+  },
 ]]></content>
 	<tabTrigger>checkboxgroup</tabTrigger>
 	<scope>text.wxml</scope>

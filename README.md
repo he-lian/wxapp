@@ -2,16 +2,20 @@
 weixin app snippet for sublime
 
 
-### 使用说明
-	1、sublime 先安装插件wxapp
-	2、将这个文件包放到Packages目录下即可
 
 ### 待处理问题
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+### 更新：2018-06-13
+	1、增加组件：日期时间选择器
 
+### 更新：2018-06-13
+	1、radiogroup、checkboxgroup调整为带数据与事件版
 
+### 更新：2018-06-05
+	1、增加组件：滑动切换组件
+	2、增加组件：多项滑动切换组件(头部可滚动)
 
 
 ### 更新：2018-06-04
@@ -121,9 +125,10 @@ weixin app snippet for sublime
 | pickerAll|[picker 全部](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | picker|[picker 普通选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | pickerMul|[picker 多项选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerCity|[picker 城市选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | pickerTime|[picker 时间选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
 | pickerDate|[picker 日期选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
-| pickerCity|[picker 城市选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker.html)|
+| pickerDateTime|[picker-view 日期时间选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker-view.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
 | scroll|[scroll-view 常规图片滚动：半露](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | scrollx|[scroll-view 浮动菜单](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
@@ -147,6 +152,9 @@ weixin app snippet for sublime
 | yzm | [验证码] |
 | radioList | [单选组件] |
 | textareaNumber | [文本输入限定字数组件] |
+| switchTab | [滑动切换组件] |
+| switchTabMul | [多项滑动切换组件(头部可滚动)] |
+| pickerDateTime | [日期时间选择器] |
 
 
 

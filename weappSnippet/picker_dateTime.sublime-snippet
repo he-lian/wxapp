@@ -1,0 +1,87 @@
+<snippet>
+	<content><![CDATA[
+<!-- 日期时间选择器：年月日时分 -->
+<!-- 使用picker-view实现，样式定义查询官网：https://developers.weixin.qq.com/miniprogram/dev/component/picker-view.html -->
+
+
+
+
+<view>{{year}}年{{month}}月{{day}}日</view>
+<picker-view indicator-style="height: 50px;" style="width: 100%; height: 150px; background: transparent;over-flow:hidden;font-sizg:1.2em;" value="{{value}}" bindchange="bindChange" class="picker-view" mask-style="display:none" mask-class="mask">
+  <picker-view-column>
+    <view wx:for="{{years}}" class="item" style="line-height: 50px">{{item}}年</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{months}}" class="item" style="line-height: 50px">{{item}}月</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{days}}" class="item" style="line-height: 50px">{{item}}日</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{hours}}" class="item" style="line-height: 50px">{{item}}时</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{seconds}}" class="item" style="line-height: 50px">{{item}}分</view>
+  </picker-view-column>
+</picker-view>
+
+
+
+
+
+.picker-view{
+  background-color: transparent;
+  .item{
+    text-align: center;
+  }
+  .mask{}
+}
+
+
+
+
+
+
+const date = new Date()
+const years = []
+const months = []
+const days = []
+const hours = []
+const seconds = []
+for (let i = 1990; i <= date.getFullYear(); i++) {years.push(i)}
+for (let i = 1; i <= 12; i++) {months.push(i)}
+for (let i = 1; i <= 31; i++) {days.push(i)}
+for (let i = 0; i <= 23; i++) {hours.push(i)}
+for (let i = 0; i <= 59; i++) {seconds.push(i)}
+Page({
+  // 页面的初始数据
+  data: {
+    years: years,
+    year: date.getFullYear(),
+    months: months,
+    month: 2,
+    days: days,
+    day: 2,
+    hours:hours,
+    hour: 2,
+    seconds:seconds,
+    second: 2,
+    value: [9999, 1, 1,1,1],
+  },
+  bindChange: function(e) {
+    const val = e.detail.value
+    this.setData({
+      year: this.data.years[val[0]],
+      month: this.data.months[val[1]],
+      day: this.data.days[val[2]],
+      hour: this.data.hours[val[2]],
+      second: this.data.seconds[val[2]]
+    })
+  },
+})
+
+
+]]></content>
+	<tabTrigger>pickerDateTime</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
