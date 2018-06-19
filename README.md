@@ -7,8 +7,13 @@ weixin app snippet for sublime
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
-### 更新：2018-06-13
+
+
+
+
+### 更新：2018-06-19
 	1、增加组件：日期时间选择器
+	2、增加组件：回到顶部
 
 ### 更新：2018-06-13
 	1、radiogroup、checkboxgroup调整为带数据与事件版
@@ -155,6 +160,7 @@ weixin app snippet for sublime
 | switchTab | [滑动切换组件] |
 | switchTabMul | [多项滑动切换组件(头部可滚动)] |
 | pickerDateTime | [日期时间选择器] |
+| goTop | [回到顶部] |
 
 
 

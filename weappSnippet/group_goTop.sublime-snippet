@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+<!-- 回顶部：1、需要将内容用scroll-view包起来并设置scroll-view为100vh，内部可包swiper组件，但有些东西不能包； -->
+<scroll-view scroll-y scroll-with-animation='true' scroll-top='{{ topDistance }}'>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+	<view>1</view>
+</scroll-view>
+
+
+data:{
+	topDistance: 0,
+},
+btnGoTop: function () {
+	this.setData({
+		topDistance: this.data.topDistance = 0
+	});
+},
+
+.page1{
+	overflow: hidden;
+	scroll-view{height: 100vh;width: 100%;}
+}
+<button class="btnFixedGoTop" bindtap="btnGoTop">
+	<image src="/images/arrow_top.png" class="icon" mode="aspectFill"></image>
+</button>
+
+
+]]></content>
+	<tabTrigger>goTop</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
