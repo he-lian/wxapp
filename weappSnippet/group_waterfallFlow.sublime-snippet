@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+<view class="WxMasonry">
+	<view class="item">
+		<image src="/images/img411.jpg" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/face281.png" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/img411.jpg" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/face-small6.png" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/ft2-on.png" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/face281.png" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/img101.png" class="icon" mode="widthFix"></image>
+	</view>
+	<view class="item">
+		<image src="/images/face281.png" class="icon" mode="widthFix"></image>
+	</view>
+</view>
+
+.WxMasonry{
+	column-count:2;
+	.item{
+		display: flex;flex-direction:row;
+		padding: 5rpx;
+	}
+}
+
+]]></content>
+	<tabTrigger>waterfallFlow</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

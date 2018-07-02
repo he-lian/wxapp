@@ -1,0 +1,77 @@
+<snippet>
+	<content><![CDATA[
+<scroll-view scroll-x="true" class="scrollHeader" scroll-left="{{scrollLeft}}" scroll-with-animation="true">
+	<block wx:for="{{topMenu}}">
+		<view bindtap="btnTopMenu" id="{{index}}" class="{{item.class}}">{{item.title}}</view>
+	</block>
+</scroll-view>
+
+
+data:{
+  scrollLeft:0,
+  winW:320,
+  winH:560,
+  topMenu:[
+    {id:0,title:"精选",class:"item on"},
+    {id:1,title:"本地",class:"item"},
+    {id:2,title:"新时代",class:"item"},
+    {id:3,title:"推荐",class:"item"},
+    {id:4,title:"视频",class:"item"},
+    {id:5,title:"科技",class:"item"},
+    {id:6,title:"本地",class:"item"},
+    {id:7,title:"新时代",class:"item"},
+    {id:8,title:"推荐",class:"item"},
+    {id:9,title:"视频",class:"item"},
+    {id:10,title:"科技",class:"item"}
+  ],
+ },
+btnTopMenu:function(e){
+  const _this=this;
+  var idx=e.target.id;
+  var tempItems=_this.data.topMenu;
+  tempItems.forEach(function(item){
+    if(item.id==idx){
+      item.class="item on";
+    }else{
+      item.class="item";
+    }
+  });
+  var length=0;
+  for(var i=0;i<((idx-1)>0?(idx-1):0);i++){
+    length+=tempItems[i].title.length;
+  }
+  var s=this.data.winW/750;
+  var l=30*s*length+40*s*((idx-1)>0?(idx-1):0);
+  this.setData({
+    scrollLeft:l,
+    topMenu:tempItems
+  })
+},
+// 生命周期函数--监听页面加载
+onLoad: function (options) {
+  const _this=this;
+  wx.getSystemInfo({
+    success: function(res) {
+      _this.setData({winW:(res.windowWidth),winH:(res.windowHeight)})
+    }
+  })
+},
+
+
+
+
+.scrollHeader{
+  @extend %wf;top: 0rpx;z-index: 99;background-color: #fff;
+  height: 80rpx;line-height: 80rpx;background-color: #fff;padding: 0 30rpx;font-size: 26rpx;
+  white-space: nowrap;
+  .item{
+    margin-left: 50rpx;
+    color:#999999;box-sizing:border-box;display: inline-block;height: 80rpx;line-height: 80rpx;
+    &.on{color:#333;border-bottom: #333 3px solid;}
+    &:first-child{margin-left: 0;}
+  }
+}
+]]></content>
+	<tabTrigger>scrollHeader</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

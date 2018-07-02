@@ -6,9 +6,17 @@ weixin app snippet for sublime
 ### 待处理问题
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
+	3、增加组件：瀑布流简单模型
+	4、调整api调用名字：showtoast、hidetoast、showmodal、hidemodal、showactionsheet、phonecall、
 
 
 
+### 更新：2018-07-01
+	1、增加组件：图片选择上传
+	2、image标签增加widthFix属性
+		widthFix： 等比缩放，完整显示
+        aspectFill：等比缩放，短边完全展示，超出隐藏
+        aspectFit： 等比缩放，长边完全展示，不足漏底色
 
 
 ### 更新：2018-06-19
@@ -136,7 +144,6 @@ weixin app snippet for sublime
 | pickerDateTime|[picker-view 日期时间选择器](https://developers.weixin.qq.com/miniprogram/dev/component/picker-view.html)|
 | progress|[progress](https://mp.weixin.qq.com/debug/wxadoc/dev/component/progress.html)|
 | scroll|[scroll-view 常规图片滚动：半露](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
-| scrollx|[scroll-view 浮动菜单](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | scrolly|[scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html)|
 | slider|[slider](https://mp.weixin.qq.com/debug/wxadoc/dev/component/slider.html)|
 | switch|[switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html)|
@@ -157,10 +164,14 @@ weixin app snippet for sublime
 | yzm | [验证码] |
 | radioList | [单选组件] |
 | textareaNumber | [文本输入限定字数组件] |
+| scrollHeader | [scroll-view 浮动菜单] |
 | switchTab | [滑动切换组件] |
-| switchTabMul | [多项滑动切换组件(头部可滚动)] |
+| switchTabMul | [多项滑动切换组件(头部与内容同时滚动)] |
+| switchTabMul2 | [多项滑动切换组件(头部与内容同时滚动-效果更好)] |
 | pickerDateTime | [日期时间选择器] |
 | goTop | [回到顶部] |
+| upload | [图片选择上传] |
+| waterfallFlow | [瀑布流简单模型] |
 
 
 
@@ -178,6 +189,17 @@ weixin app snippet for sublime
 | app | [注册小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html) |
 | export | [模块化](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/module.html)|
 | sysInfo| [系统消息][9] |
+| showtoast| [交互反馈][17] |
+| hidetoast| [交互反馈][17] |
+| showmodal| [交互反馈][17] |
+| hidemodal| [交互反馈][17] |
+| showactionsheet| [交互反馈][17] |
+| phonecall| [拨打电话][18] |
+
+
+
+
+| getSystemInfoSync| [同步获取系统信息][18] |
 | apirequest| [网络请求](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html) |
 | apiuploadfile| [上传文件][15] |
 | apidownloadfile| [下载文件][15] |
@@ -237,13 +259,6 @@ weixin app snippet for sublime
 | apichecksession| [检测session][19] |
 | apigetuserinfo| [用户信息](https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html) |
 | apipayment| [微信支付](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-pay.html) |
-| apishowtoast| [交互反馈][17] |
-| apihidetoast| [交互反馈][17] |
-| apishowmodal| [交互反馈][17] |
-| apihidemodal| [交互反馈][17] |
-| apishowactionsheet| [交互反馈][17] |
-| getSystemInfoSync| [同步获取系统信息][18] |
-| apiphonecall| [拨打电话][18] |
 
 [1]: https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html "语音"
 [2]: https://mp.weixin.qq.com/debug/wxadoc/dev/component/checkbox.html "多选"
