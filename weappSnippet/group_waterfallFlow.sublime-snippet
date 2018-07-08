@@ -29,9 +29,16 @@
 
 .WxMasonry{
 	column-count:2;
+	column-gap:0;
+	padding: 10rpx;
 	.item{
-		display: flex;flex-direction:row;
-		padding: 5rpx;
+		display: flex;
+		flex-direction:row;
+		break-inside: avoid;
+		padding: 10rpx;
+	}
+	.item-content{
+		
 	}
 }
 

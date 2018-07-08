@@ -1,0 +1,66 @@
+<snippet>
+	<content><![CDATA[
+<!-- 未调整，仍是图片上传 -->
+<view class="g-uploadBox">
+	<block wx:for="{{uploadFilePaths}}" wx:key="item">
+		<view class="item">
+			<image src="{{item}}" class="img" mode="aspectFill"></image>
+			<button class="btn-delete" bindtap="btnDelete" data-id="{{index}}"></button>
+		</view>
+	</block>
+	<button class="item btn-upload" bindtap="btnUpload"></button>
+</view>
+
+
+
+data: {
+	uploadFilePaths:[],
+},
+btnUpload:function(e){
+	const _this=this;
+	wx.chooseImage({
+		count: 9,
+		sizeType: ['original', 'compressed'],
+		sourceType: ['album', 'camera'],
+		success: function(res) {
+			let tempFilePaths = _this.data.uploadFilePaths
+			let tempUpload=res.tempFilePaths
+			tempUpload.forEach(function(item,index){
+				tempFilePaths.push(item)
+			})
+			_this.setData({uploadFilePaths:tempFilePaths})
+		}
+	})
+},
+btnDelete:function(e){
+	let index=e.currentTarget.dataset.id;
+	let temp=this.data.uploadFilePaths;
+	temp.splice(index,index+1);
+	this.setData({uploadFilePaths:temp})
+},
+
+
+
+$url:'https://v.uicut.com/common-icon/';
+.g-uploadBox{
+	@extend %flex-start;
+	.item{
+		width: 200rpx;height: 200rpx;margin: 10rpx;border-radius: 10rpx;position: relative;
+		.img{display: block;width: 100%;height: 100%;border-radius: 10rpx;}
+	}
+	.btn-upload{
+		background: url($url+'icon-upload.png') center center no-repeat;background-size: 100% 100%;
+	}
+	.btn-delete{
+		width: 40rpx;height: 40rpx;background: url($url+'icon-close.png') center center no-repeat;background-size: 100% 100%;
+		position: absolute;right: -10rpx;top: -10rpx;
+		border-radius: 100%;background-color: $hc;
+	}
+}
+
+
+
+]]></content>
+	<tabTrigger>uploadVideo</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

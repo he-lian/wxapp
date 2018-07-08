@@ -10,13 +10,16 @@ weixin app snippet for sublime
 	4、调整api调用名字：showtoast、hidetoast、showmodal、hidemodal、showactionsheet、phonecall、
 
 
+### 更新：2018-07-08
+	1、修正waterfallFlow样式
+	2、video增加官方视频地址。
 
 ### 更新：2018-07-01
 	1、增加组件：图片选择上传
 	2、image标签增加widthFix属性
-		widthFix： 等比缩放，完整显示
-        aspectFill：等比缩放，短边完全展示，超出隐藏
-        aspectFit： 等比缩放，长边完全展示，不足漏底色
+		`widthFix： 等比缩放，完整显示
+		`aspectFill：等比缩放，短边完全展示，超出隐藏
+		`aspectFit： 等比缩放，长边完全展示，不足漏底色
 
 
 ### 更新：2018-06-19
