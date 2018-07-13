@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+<!-- 地图上带图标定位 -->
+<map id="bikeDetailMap" latitude="{{lat}}" longitude="{{lon}}" scale="16" markers="{{markers}}" />
+
+data: {
+	lat: 24.469834,
+	lon: 118.079425,
+	soc: 5,
+	capacity: 65012,
+	capacity_percent:40,
+	total_capacity:100,
+
+
+	markers: [
+	  {
+	    iconPath: "/images/icon121.png",
+	    id: 0,
+	    latitude: 24.469834,
+	    longitude: 118.079425,
+	    width: 25,
+	    height: 25
+	  },
+	  {
+	    iconPath: "/images/icon122.png",
+	    id: 0,
+	    latitude: 24.469434,
+	    longitude: 118.076425,
+	    width: 25,
+	    height: 25
+	  },
+	  {
+	    iconPath: "/images/icon123.png",
+	    id: 0,
+	    latitude: 24.465434,
+	    longitude: 118.073825,
+	    width: 25,
+	    height: 25
+	  },
+	],
+},
+
+
+]]></content>
+	<tabTrigger>mapIcon</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

@@ -6,9 +6,11 @@ weixin app snippet for sublime
 ### 待处理问题
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
-	3、增加组件：瀑布流简单模型
-	4、调整api调用名字：showtoast、hidetoast、showmodal、hidemodal、showactionsheet、phonecall、
 
+
+### 更新：2018-07-13
+	1、增加if2即含有else if的条件
+	2、增加map上标记图标组件
 
 ### 更新：2018-07-08
 	1、修正waterfallFlow样式
@@ -20,6 +22,8 @@ weixin app snippet for sublime
 		`widthFix： 等比缩放，完整显示
 		`aspectFill：等比缩放，短边完全展示，超出隐藏
 		`aspectFit： 等比缩放，长边完全展示，不足漏底色
+	3、增加组件：瀑布流简单模型
+	4、调整api调用名字：showtoast、hidetoast、showmodal、hidemodal、showactionsheet、phonecall、
 
 
 ### 更新：2018-06-19
@@ -117,6 +121,7 @@ weixin app snippet for sublime
 | radiogroup|[radio-group][5]|
 | canvas | [canvas](https://mp.weixin.qq.com/debug/wxadoc/dev/component/canvas.html#canvas) |
 | map | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
+| mapIcon | [map](https://mp.weixin.qq.com/debug/wxadoc/dev/component/map.html)|
 | image |[image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html)|
 | text | [text](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html) |
 | view | [view][4] |
