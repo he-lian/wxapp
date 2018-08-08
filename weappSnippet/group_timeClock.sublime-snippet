@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+{{hour}}:{{minute}}:{{second}}
+
+
+data: {
+    hour:23,
+    minute:59,
+    second:59,
+    times:86400,   // 24小时对应的秒数
+  },
+  timeClock:function(){
+    var _this=this;
+    var seconds=_this.data.times;
+    var timer = setInterval(function () {
+      seconds=seconds-1;
+      console.log(seconds)
+      if (seconds>=0) {
+         _this.setData({
+            hour:parseInt(seconds / 60 / 60),
+            minute: parseInt(seconds / 60 % 60),
+            second: parseInt(seconds % 60),
+        })
+      }else{
+        console.log('计时结束 ')
+        clearInterval(timer)
+      }
+    }, 1000);
+  },
+
+   // 生命周期函数--监听页面加载
+  onLoad: function(options) {
+    this.timeClock();
+  },
+
+]]></content>
+	<tabTrigger>timeClock</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>

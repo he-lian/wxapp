@@ -8,6 +8,14 @@ weixin app snippet for sublime
 	2、'.class'、'#id'将class/id名字自动填入
 
 
+
+### 更新：2018-08-08
+	1、增加组件：倒计时  23:59:59
+	2、修正input bindinput
+
+### 更新：2018-07-25
+	1、去掉button点击效果
+
 ### 更新：2018-07-13
 	1、增加if2即含有else if的条件
 	2、增加map上标记图标组件
@@ -180,6 +188,7 @@ weixin app snippet for sublime
 | goTop | [回到顶部] |
 | upload | [图片选择上传] |
 | waterfallFlow | [瀑布流简单模型] |
+| timeClock | [倒计时] |
 
 
 
