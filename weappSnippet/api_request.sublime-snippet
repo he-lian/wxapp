@@ -3,25 +3,30 @@
 wx.request({
   //必需
   url: '${1}',
+  method:'POST',
   data: {
   	${2}
   },
   header: {
       ${3:'Content-Type': 'application/json'}
+      //'Content-Type':'application/x-www-form-urlencoded'
   },
   success: function(res) {
+    console.log(res.data)
     ${4}
   },
   fail: function(res) {
+    console.log('失败')
     ${5}
   },
   complete: function(res) {
+    console.log('完成')
     ${6}
   }
 })
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>apirequest</tabTrigger>
+	<tabTrigger>request</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

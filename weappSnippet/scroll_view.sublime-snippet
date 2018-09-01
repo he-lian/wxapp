@@ -2,12 +2,12 @@
 	<content><![CDATA[
     <!-- 常规图片滚动：半露 -->
 <scroll-view scroll-x="true" class="scrollViewX" scroll-with-animation="true">
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
-      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="aspectFill"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
+      <navigator class="item" url=""><image src="/images/img14.jpg" class="icon" mode="widthFix"></image></navigator>
     </scroll-view>
 
 .scrollViewX{

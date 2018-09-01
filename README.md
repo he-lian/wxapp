@@ -7,6 +7,11 @@ weixin app snippet for sublime
 	1、emmet连写实现
 	2、'.class'、'#id'将class/id名字自动填入
 
+### 更新：2018-08-10
+	1、更新api  request
+
+### 更新：2018-08-09
+	1、增加组件：marquee
 
 
 ### 更新：2018-08-08
@@ -189,7 +194,7 @@ weixin app snippet for sublime
 | upload | [图片选择上传] |
 | waterfallFlow | [瀑布流简单模型] |
 | timeClock | [倒计时] |
-
+| marquee | [滚动消息] |
 
 
 

@@ -3,7 +3,7 @@
 <swiper class="${1:g-banner}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" style="height:{{bannerHeight}}rpx">
   <block wx:for="{{banners}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="" height="{{bannerHeight}}rpx"/>
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
     </swiper-item>
   </block>
 </swiper>

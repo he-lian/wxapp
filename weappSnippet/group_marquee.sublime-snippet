@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+<view class="marquee">
+    <view class="txt">购房指南</view>
+    <swiper class="marquee-box" vertical="true" autoplay="true" circular="true" interval="1000">
+      <block wx:for="{{msgList}}">
+        <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+          <swiper-item>
+            <view class="swiper_item">{{item.title}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+
+
+  // 生命周期函数--监听页面加载
+  onLoad: function (options) {
+    this.setData({
+      msgList: [
+        { url: "url", title: "多地首套房贷利率上浮 热点城市渐迎零折扣时代" },
+        { url: "url", title: "交了20多年的国内漫游费将取消 你能省多少话费？" },
+        { url: "url", title: "北大教工合唱团出国演出遇尴尬:被要求给他人伴唱" }]
+    });
+  },
+
+.marquee{
+  @extend %flex;
+  padding: 20rpx;
+  border-top: $bc 1px solid;border-bottom: $bc 1px solid;
+  height: 110rpx;
+  .txt{padding-right: 30rpx;border-right: $bc 1px solid;}
+  .marquee-box{height:60rpx;flex:1;margin-left: 20rpx;line-height: 60rpx;}
+  .swiper_item{font-size:30rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+}
+
+]]></content>
+	<tabTrigger>marquee</tabTrigger>
+	<scope>text.wxml</scope>
+</snippet>
